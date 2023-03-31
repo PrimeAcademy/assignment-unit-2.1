@@ -58,9 +58,11 @@ if (pets < allowedPets) {
 
 let mostPets;
 
-if (pets >= friendsPets) {
+if (pets > friendsPets) {
   mostPets = pets;
   console.log("I have the most pets", mostPets);
+} else if (pets === friendsPets) {
+  console.log("We have the same amount of pets", mostPets);
 } else {
   mostPets = friendsPets;
   console.log("My friends have the most pets", mostPets);
