@@ -89,11 +89,14 @@ console.log('mostPets:', mostPets)
 switch (luckyNumber) {
     case 1:
         console.log("One is the loneliest number");
+        break; // Break statements needed because JavaScript is weird
     case 2:
         console.log("Two can be as bad as one. ",
                     "It's the loneliest number since the number one.");
+        break;
     case 3:
         console.log("Harry Edward Nilsson III");
+        break;
     default:
         console.log("Aerial Ballet");
 }
