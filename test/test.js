@@ -39,31 +39,30 @@ if (typeof window === 'object') {
  * Put all tests within this describe.
  */
 describe('Automated tests', function () {
-    describe('Using let and const, not var', function () {
-        it(`Using let and const, not var`, function () {
+    describe('Using let and const, not var',  function () {
+        it(`Using let and const, not var`,  function () {
 
             if (typeof window !== 'undefined') {
                 this.skip(); // Skip this test if running in a browser
-              }
+            }
 
             const fs = require('fs');
             const path = require('path')
             // Read the file
-            fs.readFile(path.resolve(__dirname, JSFILE), 'utf8', (err, data) => {
-                if (err) {
-                    console.error(err);
-                    return;
-                }
+            const data =  fs.readFileSync(path.resolve(__dirname, JSFILE), 'utf8')
+              
 
                 // Define the regex pattern
                 const regex = /var\s/g;
 
                 // Find all matches
-                const matches = data.match(regex);
+                const matches =  data.match(regex);
 
                 expect(matches.length).to.equal(0);
-            });
+        
         })
+    });    
+
     })
     describe(`First Name assigned to String`, function () {
         it(`First Name assigned to String`, function () {
