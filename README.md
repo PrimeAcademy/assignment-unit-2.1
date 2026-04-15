@@ -17,8 +17,8 @@ Remember `console.log()` is your friend and you can use it in conjunction with t
 
 This assignment you'll be completing the scripts in the following files. But note, that we have different levels of difficulty.
 
-- [ ] *index.html* (You can put any questions you have in this file)
-- [ ] *aboutMe.js* (Required Features, Stretch Goals)
+- [x] *index.html* (You can put any questions you have in this file)
+- [] *aboutMe.js* (Required Features, Stretch Goals)
 
 The aboutMe.js file contains comments with prompts on what code to write. Do not erase the comments, just write the code below each commented line.
 
